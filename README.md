@@ -1,6 +1,8 @@
 # Chill Path
 
-Chill Path is a smart routing web application designed to help users find the most shaded and comfortable walking routes during extreme heat. Inspired by the growing global concern over heat-related deaths and the recent Toronto heat wave, Chill Path empowers people—especially vulnerable groups like elders and individuals with accessibility needs—to safely enjoy outdoor activities by avoiding direct sun exposure and locating essential public amenities.
+This project was submitted to 2025 SolutionHacks Hackathon.
+
+Chill Path is a smart routing web application designed to help users find the most shaded and comfortable walking routes during extreme heat. Inspired by the growing global concern over heat-related deaths and the recent Toronto heat wave, Chill Path empowers people (especially vulnerable groups like elders and individuals with accessibility needs) to safely enjoy outdoor activities by avoiding direct sun exposure and locating essential public amenities.
 
 ## Features
 
@@ -18,21 +20,28 @@ Estimates water needed for the walk based on route length and temperature (plann
 
 ## Tech Stack
 
-**Frontend**  
-Mapbox GL JS, HTML, CSS, JavaScript, TypeScript
+## Frontend
+- **HTML, CSS, JavaScript**: Core web technologies for UI and interactivity
+- **Mapbox GL JS**: Interactive maps and geospatial visualization
 
-**Backend**  
-Node.js with Express, integrated via ngrok during development
+## Backend
+- **Node.js**: JavaScript runtime for backend services
+- **Turf.js**: Geospatial calculations and analysis
+- **SunCalc.js**: Sun position and shadow calculations
+- **TypeScript**: Strongly-typed JavaScript for backend code
+- **Python**: Used for chatbot and hydration microservices
 
-**APIs Used**  
-Mapbox Directions API  
-ShadeMap API – calculates shadow coverage using sun position and building outlines  
-Open Toronto API – fetches public amenities data
+## Other/Supporting
+- **pnpm**: Fast, disk space-efficient package manager for Node.js
+- **OpenStreetMap/Overpass API**: Source for building and amenity data
+- **Custom shade calculation logic**: JavaScript-based, for dynamic shade rendering
+- **REST APIs**: For routing, amenities, and shade data
+
 
 ## Architecture
 
 **Shade Detection**  
-ShadeMap calculates building shadow polygons based on current sun position.  
+ShadeMap is used to visualize the building shadow polygons based on current sun position.  
 Geographic coordinates are assessed to determine whether they fall in shade.
 
 **Routing Algorithm**  
