@@ -19,7 +19,7 @@ Estimates water needed for the walk based on route length and temperature (plann
 ## Tech Stack
 
 **Frontend**  
-Mapbox GL JS, HTML, CSS, JavaScript
+Mapbox GL JS, HTML, CSS, JavaScript, TypeScript
 
 **Backend**  
 Node.js with Express, integrated via ngrok during development
